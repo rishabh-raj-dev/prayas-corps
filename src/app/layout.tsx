@@ -6,9 +6,10 @@ import clsx from "clsx";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "Prayas Corps",
+  description: "Empowering businesses with innovative web and mobile solutions through cutting-edge technology and open-source software.",
 };
+
 
 export default function RootLayout({
   children,
