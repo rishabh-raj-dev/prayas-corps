@@ -15,7 +15,7 @@ const pricingTiers = [
       "Unlimited tasks and projects",
       "Unlimited storage (you get the point)",
       "All integrations",
-      "Support? You’ve got it",
+      "Support? You&apos;ve got it", // Escaped the apostrophe
     ],
   },
   {
@@ -61,7 +61,8 @@ export const Pricing = () => {
         <div className={"container"}>
           <div className={"section-heading"}>
             <h2 className={"section-title"}>Pricing (Not Really)</h2>
-            <p className={"section-description mt-5"}>Yes, we have pricing tiers, but everything's free. Choose your "plan," and enjoy all the features without spending a dime. Sarcasm aside, we're open source!</p>
+            <p className={"section-description mt-5"}>Yes, we have pricing tiers, but everything&apos;s free. Choose your &quot;plan,&quot; and enjoy all the features without spending a dime. Sarcasm aside, we&apos;re open source!</p> 
+            {/* Escaped apostrophes and quotes */}
           </div>
           <div className={"flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-center lg:justify-center"}>
             {pricingTiers.map((tier, index) => (
