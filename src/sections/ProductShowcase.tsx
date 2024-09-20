@@ -22,7 +22,7 @@ export const ProductShowcase = () => {
             </div>
             <h2 className={"section-title mt-5"}>Join Us in Building the Future of Open Source Solutions</h2>
             <p className={"section-description mt-5"}>
-                At Prayas Corps, we believe in the power of collaboration. Our open-source platform allows businesses and developers to come together to build innovative web and mobile solutions. Whether you're looking to streamline your workflow or contribute to meaningful projects, Prayas Corps is your partner for growth. Bring your ideas, and let's build the future together!
+                At Prayas Corps, we believe in the power of collaboration. Our open-source platform allows businesses and developers to come together to build innovative web and mobile solutions. Whether you&apos;re looking to streamline your workflow or contribute to meaningful projects, Prayas Corps is your partner for growth. Bring your ideas, and let&apos;s build the future together!
             </p>
         </div>
         <div className={"relative"}>
@@ -32,7 +32,5 @@ export const ProductShowcase = () => {
         </div>
     </div>
 </section>
-
-
   );
 };
