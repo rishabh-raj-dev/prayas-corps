@@ -1,5 +1,5 @@
 import ArrowRight from '@/assets/arrow-right.svg'
-import Logo from '@/assets/logosaas.png'
+import Logo from '@/assets/prayasCorps.png'
 import MenuIcon from '@/assets/menu.svg'
 
 import {Fragment} from "react";
@@ -7,12 +7,12 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-      <header className={"sticky top-0 backdrop-blur-sm z-20"}>
+      <header className={"top-0 backdrop-blur-sm z-20"}>
         
-          <div className='py-7'>
+          <div className='py-2'>
               <div className='container'>
                   <div className='flex justify-between items-center'>
-                      <Image src={Logo} alt={'SaaS Logo'} height={40} width={40}/>
+                      <Image src={Logo} alt={'SaaS Logo'} height={150} width={270}/>
                       <MenuIcon className="h-5 w-5 md:hidden" icon={'menu'}/>
                       <nav className='hidden md:flex gap-6 text-black/60 items-center'>
                           <a href={"#"}>About</a>

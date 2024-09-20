@@ -1,56 +1,56 @@
-"use client"
-import CheckIcon from '@/assets/check.svg'
+"use client";
+import CheckIcon from '@/assets/check.svg';
 import {twMerge} from "tailwind-merge";
 import {motion} from "framer-motion";
 
 const pricingTiers = [
   {
-    title: "Free",
+    title: "Free Forever",
     monthlyPrice: 0,
-    buttonText: "Get started for free",
+    buttonText: "Get started for free (like, really)",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
+      "Unlimited project members (seriously)",
       "Unlimited tasks and projects",
-      "2GB storage",
-      "Integrations",
-      "Basic support",
+      "Unlimited storage (you get the point)",
+      "All integrations",
+      "Support? You’ve got it",
     ],
   },
   {
-    title: "Pro",
-    monthlyPrice: 9,
-    buttonText: "Sign up now",
+    title: "Pro (But Still Free)",
+    monthlyPrice: 0,
+    buttonText: "Sign up for free (yes, still free)",
     popular: true,
     inverse: true,
     features: [
-      "Up to 50 project members",
-      "Unlimited tasks and projects",
-      "50GB storage",
-      "Integrations",
-      "Priority support",
-      "Advanced support",
-      "Export support",
+      "Unlimited project members",
+      "All the tasks and projects you can imagine",
+      "Unlimited storage (again)",
+      "All integrations (yes, everything)",
+      "Priority support (but, also free)",
+      "Export support (no extra charge)",
+      "Advanced support (for free, of course)",
     ],
   },
   {
-    title: "Business",
-    monthlyPrice: 19,
-    buttonText: "Sign up now",
+    title: "Business (Free Edition)",
+    monthlyPrice: 0,
+    buttonText: "Sign up now (for $0)",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
+      "Unlimited project members",
       "Unlimited tasks and projects",
-      "200GB storage",
-      "Integrations",
-      "Dedicated account manager",
-      "Custom fields",
-      "Advanced analytics",
+      "Infinite storage (sounds familiar?)",
+      "All integrations included",
+      "Dedicated account manager (kind of)",
+      "Custom fields (as many as you need)",
+      "Advanced analytics (also free)",
       "Export capabilities",
-      "API access",
-      "Advanced security features",
+      "API access (no strings attached)",
+      "Advanced security features (yup, free too)",
     ],
   },
 ];
@@ -60,14 +60,13 @@ export const Pricing = () => {
       <section className={"py-24 bg-white"}>
         <div className={"container"}>
           <div className={"section-heading"}>
-            <h2 className={"section-title "}>Pricing</h2>
-            <p className={"section-description mt-5"}>Discover unbeatable value with our flexible pricing plans. Choose
-              the perfect package for your business needs and maximize your ROI. Sign up now and save big!</p>
+            <h2 className={"section-title"}>Pricing (Not Really)</h2>
+            <p className={"section-description mt-5"}>Yes, we have pricing tiers, but everything's free. Choose your "plan," and enjoy all the features without spending a dime. Sarcasm aside, we're open source!</p>
           </div>
           <div className={"flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-center lg:justify-center"}>
             {pricingTiers.map((tier, index) => (
                 <div key={index}
-                     className={twMerge("card", tier.inverse===true && 'border-black  bg-black text-white')}>
+                     className={twMerge("card", tier.inverse === true && 'border-black  bg-black text-white')}>
                   <div className={"relative flex justify-between"}>
                     <h3 className={twMerge("text-lg font-bold text-black/50", tier.inverse === true && "text-white/50")}>{tier.title}</h3>
                     {tier.popular && (
