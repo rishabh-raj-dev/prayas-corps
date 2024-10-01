@@ -7,6 +7,8 @@ import {Testimonials} from "@/sections/Testimonials";
 import {CallToAction} from "@/sections/CallToAction";
 import {Footer} from "@/sections/Footer";
 import {Fragment} from "react";
+import Newsletter from "@/sections/NewsLetter";
+
 
 export default function Home() {
   return (
@@ -15,7 +17,8 @@ export default function Home() {
           <Hero />
           <LogoTicker />
           <ProductShowcase />
-          <Pricing />
+          {/* <Pricing /> */}
+          <Newsletter/>
           <Testimonials />
           <CallToAction />
           <Footer />
